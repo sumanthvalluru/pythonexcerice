@@ -1,0 +1,23 @@
+create table itemtable(
+
+categoty integer,
+itemname varchar(30) not null,
+itemID integer primary key,
+qty integer null,
+price float,);
+
+select*from itemtable;
+
+insert into itemtable values (1,'apple',101,1,50),
+(1,'orange',102,1,60),
+(1,'mango',103,1,70);
+
+update itemtable
+set categoty=2
+where itemname='orange'
+
+update itemtable
+set categoty=3
+where itemname='mango'
+
+alter table itemtable add brand varchar(20);
