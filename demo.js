@@ -99,7 +99,7 @@ console.log(newarray)
 function namebro(){
    console.log("what is your name : sandeep")
 }
-namebro();
+namebro(); 
 
 
 
@@ -127,11 +127,31 @@ console.log(array3)
 let array10=[380,340,235,456,123]
 console.log(array10.slice(0,2)) //slice  
 
+let arraysum=["sumi",10,20,30]
+console.log(arraysum.reverse()) //reverse
+
+let array40=[20,30,40,50]
+array40.push("raju")
+console.log(array40) //push
  
+       //function
 
+function person(name,age,role,greet){
+    this.name=name
+    this.age=age
+    this.role=role
+    this.greet=greet
 
+    this.greet=function(){
+        return("hello")
+    }
+}
 
+const person1=new person("sai",23,"web developer")
+const person2=new person("nani",24,"developer")
 
+console.log(person1.name,person1.age,person1.role,person1.greet())
+console.log(person2.name,person2.age,person2.role,person2.greet())
 
 
 
