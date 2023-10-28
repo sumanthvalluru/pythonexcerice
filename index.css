@@ -9,3 +9,10 @@ p{
     text-align: center;
     background-color: black;
 }
+.table{
+    border-collapse: collapse;
+    border: 1px solid #b50b0b;
+    width: 50%;
+    text-align: left;
+    padding: 2px;
+}
