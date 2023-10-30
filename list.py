@@ -1,0 +1,15 @@
+a=[1,83,37434,023.8,6667,'guru']
+print(a)
+print(a[4])
+print(a[-1])
+a.append('aisha')
+print(a)
+a.extend([64,984398,8378,876587,47,474])
+print(a)
+print(a.count(3))
+a.remove(64)
+print(a)
+a.pop(1)
+print(a)
+for i in a:
+    print(i)
