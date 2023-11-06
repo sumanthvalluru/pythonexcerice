@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@300&display=swap');
+.nav-logo{
+    height: 40px;
+}
+.mass-body{
+  height: 400vh;
+  background-image:url('https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_640.jpg');
+}
+.item-nav{
+    color: rgb(15, 17, 17);
+    font-family:'poppins',sans-serif;
+}
+.item-nav:hover{
+    color: rgb(197, 187, 187);
+}
+.anchor{
+    margin-left: auto;
+}
+.body-section{
+    height: 80vh;
+   
+}
+.box-left{
+  
+    color: white;
+    height: 50px;
+    font-family: 'Encode sans',sans-serif;
+}
+.box-left{
+   
+    color: white;
+    height: 50px;
+    font-family: 'Encode sans',sans-serif;
+}
