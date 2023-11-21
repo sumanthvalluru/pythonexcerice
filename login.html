@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      background: url("img/backimg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    .login-container button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+  </form>
+</div>
+<script>
+  function login() {
+    var enteredUsername = document.getElementById("username").value;
+    var enteredPassword = document.getElementById("password").value;
+    var validUsername = "Admin";
+    var validPassword = "1234";
+    if (enteredUsername === validUsername && enteredPassword === validPassword) {
+      alert("Login successful!");
+      // Redirect to the home page
+      window.location.href = "admin.html";
+    } else {
+      alert("Invalid username or password. Please try again.");
+    }
+  }
+</script>
+
+</body>
+</html>
