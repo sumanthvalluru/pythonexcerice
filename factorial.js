@@ -1,25 +1,46 @@
-// program to find the factorial of a number
-function factorial(x) {
+// var temp = 1;
+// function factoril(num){
+    
+//     for(let i = 1; i <= num; i++){
+//         temp = temp * i;
+        
+//     }
+//     console.log(temp)
+// }
 
-    // if number is 0
-    if (x == 0) {
+// factoril(4);
+
+
+
+
+
+
+
+
+
+
+
+function factoril(num){
+    if(num == 1){
         return 1;
     }
 
-    // if number is positive
-    else {
-        return x * factorial(x - 1);
-    }
+    return num* factoril(num - 1);
 }
 
-// take input from the user
-const num = prompt('Enter a positive number: ');
+console.log(factoril(4))
 
-// calling factorial() if num is positive
-if (num >= 0) {
-    const result = factorial(num);
-    console.log(`The factorial of ${num} is ${result}`);
-}
-else {
-    console.log('Enter a positive number.');
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
