@@ -1,43 +1,65 @@
-function Add(){
-    var num1 = parseInt(prompt())
-    var num2 = parseInt(prompt())
-    var result = (num1 + num2);
-    return document.getElementById("re1").innerHTML = result;
+// var num = 5;
 
-}
-function Substract(){
-    var num1 = parseInt(prompt())
-    var num2 = parseInt(prompt())
-    var result = (num1 - num2);
-    return document.getElementById("re2").innerHTML = result;
-    
+// if(num % 2 === 0){
+//     console.log("even");
+// } else{
+//     console.log("Odd")
+// }
 
-}
-function Multiply(){
-    var num1 = parseInt(prompt())
-    var num2 = parseInt(prompt())
-    var result = (num1 * num2);
-    return document.getElementById("re3").innerHTML = result;
+// var a = 4;
+// console.log(typeof(a));
+// var a = "Aman"
+// console.log(typeof(a));
+
+// var i = 0,j=0;
+// for(i=0;i<5;i++){
+// for(j=0;j<4;j++){
+// if(i>1)
+// break;
+// }
+// console.log("Relevel  " + i + "   " + j);
+// }
+
+// var n = 8;
+// function isPerfectSquare(n){
+//     var x=Math.floor(Math.sqrt(n));
+//     if(x*x==n){
+//     return true;
+//     }
+//     else{
+//     return false;
+//     }
+// }
+
+// console.log(isPerfectSquare(81));
 
 
+
+// A function to check if n is palindrome
+function isPalindrome(n)
+{
+	// Find reverse of n
+	var rev = 0;
+	for (var i = n; Math.trunc(i) > 0; i /= 10)
+	{
+		rev = ((rev*10) + (Math.trunc(i)%10));
+		
+		}
+
+	// If n and rev are same, then n is palindrome
+	return (n==rev);
+}
+	
+
+// prints palindrome between min and max
+function countPal(min, max)
+{
+	for (var i = min; i <=max; i++)
+	{
+		if(isPalindrome(i))
+		document.write(i+" " );
+	}
 }
 
-function Divide(){
-    var num1 = parseInt(prompt())
-    var num2 = parseInt(prompt())
-    var result = (num1 / num2);
-    return document.getElementById("re4").innerHTML = result;
-}
-function Sqrt(){
-    var num1 = parseInt(prompt())
-    var num2 = 0.5
-    var result = Math.sqrt(num1, num2);
-    return document.getElementById("re5").innerHTML = result;
-}
-function power(){
-    var num1 = parseInt(prompt())
-    var num2 = parseInt(prompt())
-    var result = Math.pow(num1, num2);
-    return document.getElementById("re6").innerHTML = result;
-}
-
+// Driver program to test above function
+countPal(100 , 150);
