@@ -1,0 +1,16 @@
+.nav-logo{
+    height: 40px;
+}
+.mass-body{
+  height: 400vh;
+  
+}
+.item-nav{
+    color: rgb(53, 56, 56);
+}
+.item-nav:hover{
+    color: black;
+}
+.anchor{
+    margin-left: auto;
+}
